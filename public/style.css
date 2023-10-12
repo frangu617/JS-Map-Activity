@@ -1,0 +1,29 @@
+* {
+    font-family: 'Archivo Black', sans-serif;
+    
+}
+h1{
+    font-size: 50px;
+}
+body {
+    
+    text-align: center;
+    background-color: rgb(173, 210, 211);
+}
+aside{
+    background-image: linear-gradient(to right, cadetblue , rgb(173,210,211));
+    font-family: 'Archivo Black', sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    
+    height: 75vh;
+    width: 75vw;
+    background-color: #ccc;
+    
+    border: 5px solid black;
+}
