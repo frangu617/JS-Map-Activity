@@ -56,7 +56,9 @@ let placeArr = dropdown.addEventListener('change', placeSearch);
 
 async function placeSearch() {
 
-  removeMarkers(myMap.markers)
+  /// need a function to clear the map///
+
+
   const coords = await getUserCoordinates();
   const businessType = dropdown.value;
   try {
@@ -162,9 +164,9 @@ function createMarkers(buss) {
   }
 }
 
-function removeMarkers(marker) {
+// function removeMarkers() {
 
+// myMap.map.removeLayer(layerGroup)
 
-
-  console.log("after removal: " + myMap.markers)
-}
+//   console.log("after removal: " + myMap.markers)
+// }
