@@ -23,20 +23,27 @@
     <h1>An interactive map by Francisco Gutierrez</h1>
     <main>
         <aside>
+            <div class="buss">
+                <h2>Where do you want to go?</h2>
 
-            <h2>Where do you want to go?</h2>
-            <p>Please select an option:</p>
-            <select id="business-type">
-                <option value="" disabled selected>Select an option</option>
-                <option value="restaurants">Restaurants</option>
-                <option value="coffee">Coffee</option>
-                <option value="hotel">Hotels</option>
-                <option value="market">Markets</option>
-            </select>
-            <p>How many of that option do you want to see (max)?</p>
-            <input type="number" id="limit">
-            <button id="search">Search</button>
-           
+                <p>Please select an option:</p>
+                <select id="business-type">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="restaurants">Restaurants</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="hotel">Hotels</option>
+                    <option value="market">Markets</option>
+                </select>
+                <p>How many of that option do you want to see (max)?</p>
+                <input type="number" id="limit">
+                <button id="search">Search</button>
+            </div>
+            <div>
+                <p>Click someone in the map to update your location</p>
+            </div>
+            <div>
+                <button id="reset">Reset Markers</button>
+            </div>
         </aside>
 
 

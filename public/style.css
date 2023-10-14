@@ -12,6 +12,10 @@ body {
     background-color: rgb(173, 210, 211);
 }
 aside{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content:space-around;
     min-width: 400px;
     background-image: linear-gradient(to right, cadetblue , rgb(173,210,211));
     font-family: 'Archivo Black', sans-serif;
