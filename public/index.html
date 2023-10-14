@@ -13,6 +13,7 @@
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
@@ -32,7 +33,10 @@
                 <option value="hotel">Hotels</option>
                 <option value="market">Markets</option>
             </select>
-            <p> Please refresh the page to reset markers </p>
+            <p>How many of that option do you want to see (max)?</p>
+            <input type="number" id="limit">
+            <button id="search">Search</button>
+           
         </aside>
 
 

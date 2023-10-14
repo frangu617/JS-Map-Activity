@@ -3,6 +3,7 @@
     
 }
 h1{
+    min-width: 400px;
     font-size: 50px;
 }
 body {
@@ -11,19 +12,22 @@ body {
     background-color: rgb(173, 210, 211);
 }
 aside{
+    min-width: 400px;
     background-image: linear-gradient(to right, cadetblue , rgb(173,210,211));
     font-family: 'Archivo Black', sans-serif;
 }
 main {
+    min-width: 400px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #map {
     
     height: 75vh;
-    width: 75vw;
+    width: 50vw;
     background-color: #ccc;
-    
+    min-width: 400px;
     border: 5px solid black;
 }
