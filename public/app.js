@@ -8,8 +8,7 @@ window.onload = async function () {
   myMap.setUserIcon()
 }
 
-let layerGroup;
-let userIcon;
+
 
 const myMap = {
   coordinates: [],
@@ -72,12 +71,7 @@ async function getUserCoordinates() {
   });
   return [position.coords.latitude, position.coords.longitude];
 }
-const dropdown = document.querySelector('select');
-let placeArr = dropdown.addEventListener('change', placeSearch);
-const searchNutt = document.querySelector('#search');
-let searchArr = searchNutt.addEventListener('click', placeSearch);
-let resetMarks = document.querySelector('#reset');
-let resetButt = resetMarks.addEventListener('click', removeMarkers);
+
 async function placeSearch() {
 
   //clear map every time a new search is made if an old search exists
@@ -123,7 +117,6 @@ async function placeSearch() {
     console.error(err);
   }
 }
-
 async function processBuss(data) {
   let buss = await data.map((e) => ({
     name: e.name,
@@ -134,7 +127,6 @@ async function processBuss(data) {
   }));
   return buss;
 }
-
 function createMarkers(buss) {
   layerGroup = L.layerGroup().addTo(myMap.map);
   for (let i = 0; i < buss.length; i++) {
@@ -152,9 +144,18 @@ function createMarkers(buss) {
       .bindPopup(bussData)
   }
 }
-
 function removeMarkers() {
   if (myMap.businesses.length > 0) {
     myMap.map.removeLayer(layerGroup);
   }
 }
+
+let layerGroup;
+let userIcon;
+
+const dropdown = document.querySelector('select');
+let placeArr = dropdown.addEventListener('change', placeSearch);
+const searchNutt = document.querySelector('#search');
+let searchArr = searchNutt.addEventListener('click', placeSearch);
+let resetMarks = document.querySelector('#reset');
+let resetButt = resetMarks.addEventListener('click', removeMarkers);

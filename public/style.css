@@ -1,25 +1,31 @@
 * {
     font-family: 'Archivo Black', sans-serif;
-    
+
 }
-h1{
+
+h1 {
     min-width: 400px;
     font-size: 50px;
 }
+
 body {
-    
+
     text-align: center;
     background-color: rgb(173, 210, 211);
 }
-aside{
+
+aside {
     display: flex;
+    width: 10%;
+
     flex-direction: column;
     align-content: center;
-    justify-content:space-around;
+    justify-content: space-around;
     min-width: 400px;
-    background-image: linear-gradient(to right, cadetblue , rgb(173,210,211));
+    background-image: linear-gradient(to right, cadetblue, rgb(173, 210, 211));
     font-family: 'Archivo Black', sans-serif;
 }
+
 main {
     min-width: 400px;
     display: flex;
@@ -28,10 +34,11 @@ main {
 }
 
 #map {
-    
+
     height: 75vh;
     width: 50vw;
     background-color: #ccc;
     min-width: 400px;
     border: 5px solid black;
 }
+
